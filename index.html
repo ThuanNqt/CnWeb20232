@@ -1,0 +1,420 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Quang Thuận</title>
+  </head>
+
+  <style>
+    /*header*/
+    * {
+      margin: 0;
+    }
+    header {
+      background: rgb(192, 33, 53);
+      height: 135px;
+      width: 100vm;
+    }
+    .frame-header {
+      position: relative;
+      width: 1200px;
+      height: 135px;
+      margin: 0 159.6px;
+      z-index: 1000;
+      /* background: #c02135; */
+      background: rgb(192, 33, 53);
+    }
+    .hearder {
+      padding: 24 0 0 0;
+      background: rgb(192, 33, 53);
+      width: 1200px;
+      height: 89px;
+    }
+    .wrap-header {
+      width: 1200px;
+      height: 65px;
+      background: rgb(192, 33, 53);
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      position: relative;
+    }
+    a {
+      cursor: pointer;
+    }
+    #img-banner {
+      margin-left: 16px;
+      height: 60px;
+    }
+    img {
+      border-style: none;
+    }
+    .hearder-info-user {
+      color: #30336b;
+      font-size: 14px;
+      font-weight: 600;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+    .avatar {
+      border-radius: 8px;
+      height: 50px;
+      width: 50px;
+      margin-right: 10px;
+      margin-top: -5px;
+      background: #fff;
+      object-fit: cover;
+    }
+    .info {
+      color: rgb(255, 255, 255);
+      margin-right: 16px;
+    }
+
+    .sidebar {
+      height: 45px;
+      color: #fff;
+      display: flex;
+    }
+    .sidebar1 {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .path {
+      margin-left: 10px;
+      height: 50px;
+    }
+    .path a {
+      color: rgb(192, 33, 53);
+    }
+    /*end header*/
+
+    /*main*/
+    section {
+      margin-top: 60px;
+      display: block;
+    }
+    .main {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .detail-infor-user {
+      width: 1200px;
+      height: 1200px;
+      margin: 0 154px;
+      display: flex;
+    }
+    .box-left {
+      width: 33.3%;
+      height: 747px;
+      flex-direction: column;
+    }
+    .card {
+      border: 1px solid #ebeef5;
+      background-color: #fff;
+      color: #303133;
+      transition: 0.3s;
+      border-radius: 16px;
+    }
+    .box-left-1 {
+      width: 100%;
+      height: 480px;
+      background: #f2f2f2;
+      border-radius: 16px;
+    }
+    .card-header {
+      height: 220px;
+    }
+    .box-card-header {
+      position: relative;
+      height: 220px;
+    }
+    .box-card-header img {
+      width: 100%;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .user-image {
+      width: 200px !important;
+      height: 200px !important;
+      position: absolute !important;
+      top: -130px;
+      left: 0;
+      border: 5px solid #fff;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .user-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-size: 100%;
+      overflow: hidden;
+      position: absolute;
+      transform-origin: 95% 40%;
+      object-fit: cover;
+    }
+    .box-left-2 {
+      margin: 10px 0;
+      width: 100%;
+      height: 244px;
+      background: #f2f2f2;
+      border-radius: 16px;
+    }
+    .header2 {
+      border-bottom: 1px solid #e4e7ed;
+      padding: 0;
+      position: relative;
+      margin: 0 0 15px;
+    }
+    .tab-list a {
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+    .content-2 div {
+      margin: 10px 10px;
+    }
+
+    .box-right {
+      margin-left: 15px;
+      width: 66.6%;
+      height: 850px;
+      background: #f2f2f2;
+      border-radius: 16px;
+    }
+    .header-right {
+      padding: 0;
+      position: relative;
+      margin: 0 0 15px;
+      border-bottom: 1px solid #e4e7ed;
+    }
+    .tab-list-right {
+      display: flex;
+    }
+    .tab-list-right a {
+      padding: 10px 20px;
+      border: 1px solid #e4e7ed;
+    }
+    .content-right {
+      overflow: hidden;
+      position: relative;
+    }
+    .title1 {
+      font-weight: 700;
+      font-size: 18px;
+      border-bottom: 2px solid #ddd;
+      width: max-content;
+      margin-bottom: 10px !important;
+      display: block;
+    }
+    .row1 .col1 {
+      width: 33.3%;
+      float: left;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .col1 p {
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .row1 .col11 {
+      margin: 0;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    /*end main*/
+  </style>
+
+  <body>
+    <header>
+      <div class="frame-header">
+        <div class="hearder">
+          <div class="wrap-header">
+            <a href="#">
+              <img id="img-banner" src="Logobk.2a30b706.png" alt="" />
+            </a>
+            <div class="header-info-user">
+              <div class="dropdow" style="display: flex">
+                <div>
+                  <img class="avatar" src="avatar.png" alt="" />
+                </div>
+                <div class="info">
+                  <div>Xin chào</div>
+                  <div style="font-size: 16">NGUYỄN QUANG THUẬN</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a class="sidebar1">TRANG CHỦ</a>
+          <a class="sidebar1">NGOẠI KHÓA</a>
+          <a class="sidebar1">HƯỚNG NGHIỆP</a>
+          <a class="sidebar1">HỌC BỔNG</a>
+          <a class="sidebar1">CHẤM ĐIỂM</a>
+          <a class="sidebar1">HÀNH CHÍNH</a>
+          <a class="sidebar1">Q&A</a>
+          <a class="sidebar1">HỒ SƠ</a>
+          <a class="sidebar1">NHẬP HỌC</a>
+        </div>
+        <div class="path">
+          <a href="#">CTSV / HỒ SƠ</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="detail-infor-user">
+        <div class="box-left">
+          <div class="box-left-1 card">
+            <div class="card-header">
+              <div class="box-card-header">
+                <img src="c1-hust.png" alt="" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div style="position: relative">
+                <div
+                  class="user-image"
+                  style="z-index: 1; height: 150px; width: 150px"
+                >
+                  <img src="user.jpg" alt="" />
+                </div>
+              </div>
+              <div style="margin-top: 70px; line-height: 2">
+                <div>MS: 20215649</div>
+                <div>Họ tên: Nguyễn Quang Thuận</div>
+                <div>Lớp: Kỹ thuật máy tính 03-k66</div>
+                <div>Email: thuan.nq215649@sis.hust.edu.vn</div>
+                <div>Email cá nhân: thuan13112003@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="box-left-2 card">
+            <div style="padding: 20px 20px 20px 30px">
+              <div class="header-2">
+                <div
+                  class="tab-list"
+                  style="transform: translateX(0px); display: flex"
+                >
+                  <a href="">Trạng thái</a>
+                  <a href="">Quản lý</a>
+                </div>
+              </div>
+              <div class="content-2">
+                <div>Trạng thái học tập: Học</div>
+                <div>CPA: 4.4</div>
+                <div>Nợ: 9999999</div>
+                <div>Tích lũy: 1000000000 TC</div>
+                <div>Mức cảnh cáo: M0</div>
+                <div>Trình độ: 9999999</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-right card" style="padding-left: 10px">
+          <div style="padding: 20px">
+            <div class="header-right">
+              <div class="tab-list-right" style="transform: translateX(0px)">
+                <a href="">Lý lịch</a>
+                <a href="">Quyết định</a>
+                <a href="">Khen thưởng</a>
+                <a href="">Liên hệ</a>
+                <a href="">Nhận xét</a>
+                <a href="">Hoạt động tham gia</a>
+              </div>
+            </div>
+            <div class="content-right">
+              <div class="tab-pane">
+                <div class="row1" style="box-sizing: border-box">
+                  <h4 class="tilte1">Thông tin cá nhân</h4>
+                  <div class="col1" style="padding-left: 10px">
+                    <p>Ngày sinh: 01/01/2003</p>
+                    <p>Số CCCD: 00000000000000</p>
+                    <p>Dân tộc: Null</p>
+                    <p>Ngày vào đoàn: Null</p>
+                  </div>
+                  <div class="col1">
+                    <p>Nơi sinh: Null</p>
+                    <p>Nơi cấp: Null</p>
+                    <p>Tôn giáo: Null</p>
+                    <p>Ngày vào Đảng: Null</p>
+                  </div>
+                  <div class="col1">
+                    <p>Giới tính: Nam</p>
+                    <p>Ngày cấp:</p>
+                    <p>Chi đoàn:</p>
+                    <p>Đoàn viên:</p>
+                  </div>
+                  <p class="col11">Đối tượng chính sách:</p>
+                  <p class="col11">Số thẻ bảo hiểm:</p>
+                  <p class="col11">Địa chỉ thường chú:</p>
+                  <p class="col11">Nơi ở hiện tại:</p>
+                </div>
+
+                <div class="row1" style="box-sizing: border-box">
+                  <h4 class="title1">Thông tin gia đình</h4>
+                  <div>
+                    <p style="font-weight: bold; padding-left: 10px">
+                      Họ và tên cha: ...
+                    </p>
+                    <div class="col1" style="padding-left: 10px">
+                      <p>Dân tộc</p>
+                      <p>Nơi làm việc</p>
+                    </div>
+                    <div class="col1">
+                      <p>Năm sinh: Null</p>
+                      <p>Tôn giáo: Null</p>
+                    </div>
+                    <div class="col1">
+                      <p>Quốc tịch</p>
+                      <p>Nghề nghiệp</p>
+                    </div>
+                    <p class="col11">Địa chỉ thường trú</p>
+                    <p class="col11">Liên hệ</p>
+                  </div>
+
+                <div class="row1" style="box-sizing: border-box;">
+                  <div>
+                    <p
+                      style="
+                        font-weight: bold;
+                        padding-left: 10px;
+                        padding-top: 10px;
+                      "
+                    >
+                      Họ và tên Mẹ: ...
+                    </p>
+                    <div class="col1" style="padding-left: 10px">
+                      <p>Dân tộc</p>
+                      <p>Nơi làm việc</p>
+                    </div>
+                    <div class="col1">
+                      <p>Năm sinh: Null</p>
+                      <p>Tôn giáo: Null</p>
+                    </div>
+                    <div class="col1">
+                      <p>Quốc tịch</p>
+                      <p>Nghề nghiệp</p>
+                    </div>
+                    <p class="col11">Địa chỉ thường trú</p>
+                    <p class="col11">Liên hệ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h1 style="text-align: center;">Hello 20215649</h1>
+    </footer>
+  </body>
+</html>
